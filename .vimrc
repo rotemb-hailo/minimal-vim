@@ -26,3 +26,10 @@ nmap <C-f> :Files<CR>
 
 " nerdtree mapping
 nmap <C-b> :NERDTreeToggle<CR>
+
+" tabs
+nnoremap <C-j> :tabprevious<CR>
+nnoremap <C-k> :tabnext<CR>
+nnoremap <C-n> :tabnew<CR>
+nnoremap <C-w> :tabclose<CR>
+
