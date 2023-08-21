@@ -1,8 +1,9 @@
 " Plugins
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'                             " Fuzzy finder
 Plug 'preservim/nerdtree'                           " shows directory tree
+Plug 'haishanh/night-owl.vim'                       " Night owl theme
 call plug#end()
 
 " Options
@@ -28,8 +29,20 @@ nmap <C-f> :Files<CR>
 nmap <C-b> :NERDTreeToggle<CR>
 
 " tabs
-nnoremap <C-j> :tabprevious<CR>
+nnoremap <C-j> :tabprevious<CR>                                                         
 nnoremap <C-k> :tabnext<CR>
 nnoremap <C-n> :tabnew<CR>
 nnoremap <C-w> :tabclose<CR>
+
+
+" night-owl color-scheme
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+syntax enable
+colorscheme night-owl
+
+" To enable the lightline theme
+let g:lightline = { 'colorscheme': 'nightowl' }
 
