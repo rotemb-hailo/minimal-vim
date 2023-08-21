@@ -1,0 +1,24 @@
+" Plugins
+call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+call plug#end()
+
+" Options
+set hlsearch                                        " highlights the word being searched
+set number                                          " show line number
+
+" Misc
+set clipboard=unnamedplus                           " Not working for me. Combine vim clipbaord and sysem clipboard
+set showmatch                                       " show matching words during a search.
+set wildmenu                                        " auto completion in menu (using tab)
+
+" Indentation options
+set expandtab                                       " expand tab to spaces
+set shiftwidth=4                                    " shift = N spaces
+set smartindent                                     " use $tabstop number of spaces when replacing tab
+set tabstop=4                                       " tab = N spaces
+set autoindent                                      " auto indent when opening a new line
+
+" fzf mappings
+nmap <C-f> :Files<CR>
