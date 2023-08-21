@@ -2,6 +2,7 @@
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'                           " shows directory tree
 call plug#end()
 
 " Options
@@ -22,3 +23,6 @@ set autoindent                                      " auto indent when opening a
 
 " fzf mappings
 nmap <C-f> :Files<CR>
+
+" nerdtree mapping
+nmap <C-b> :NERDTreeToggle<CR>
