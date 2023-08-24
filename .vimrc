@@ -21,6 +21,7 @@ set shiftwidth=4                                    " shift = N spaces
 set smartindent                                     " use $tabstop number of spaces when replacing tab
 set tabstop=4                                       " tab = N spaces
 set autoindent                                      " auto indent when opening a new line
+set backspace=indent,eol,start                      " Make backspace delete in insert mode
 
 " fzf mappings
 nmap <C-f> :Files<CR>
